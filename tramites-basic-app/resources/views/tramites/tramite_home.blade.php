@@ -11,7 +11,7 @@
     <div>
         <ul>
             <li><a href="{{ route('tramites.index') }}">Ver trámites</a></li>
-            <li><a href="">Buscar trámite</a></li>
+            <li><a href="{{ route('tramites.buscar') }}">Buscar trámite</a></li>
             <li><a href="{{ route('tramites.create') }}">Crear trámite</a></li>
         </ul>
     </div>

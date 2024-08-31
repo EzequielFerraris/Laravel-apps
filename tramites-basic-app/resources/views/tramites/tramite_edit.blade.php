@@ -10,7 +10,7 @@
         <form method="POST" action="{{ route('tramites.update', $tramite)}}">
             
             @method('PATCH')
-            <x-tramites.form :tramite="$tramite" :tipos="$tipos" :sectores="$sectores"/>
+            <x-tramites.tramite_form :tramite="$tramite" :tipos="$tipos" :sectores="$sectores"/>
     
         </form>
     </div>

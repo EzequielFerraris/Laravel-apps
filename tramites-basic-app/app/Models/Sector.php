@@ -18,4 +18,5 @@ class Sector extends Model
     {
         return $this->hasMany(Tramite::class);
     }
+    
 }

@@ -5,15 +5,15 @@
     </div>
 
     <div>
-        <a href="{{ route('tramite_home') }}">Volver</a>
+        <a href="{{ route('tramites.home') }}">Volver</a>
     </div>
     
     <x-errors />
     
     <div>
-        <form method="POST" action="{{ route('tramites.store')}}">
+        <form method="POST" action="{{ route('tramites.store') }}">
 
-            <x-tramites.form :tramite="$tramite" :tipos="$tipos" :sectores="$sectores"/>
+            <x-tramites.tramite_form :tramite="$tramite" :tipos="$tipos" :sectores="$sectores"/>
 
         </form>
     </div>

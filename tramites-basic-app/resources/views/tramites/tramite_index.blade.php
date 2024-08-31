@@ -5,7 +5,7 @@
     </div>
 
     <div>
-        <a href="{{ route('tramite_home') }}">Volver</a>
+        <a href="{{ route('tramites.home') }}">Volver</a>
     </div>
     
     <div>
@@ -14,12 +14,6 @@
         <p>{{ $tramite->descripcion }}</p> 
         <p>Tipo: {{ $tramite->tipo->nombre }}</p> 
         <p>Sector: {{ $tramite->sector->nombre }}</p>  
-        
-        <ul>
-        @foreach ($tramite->requisitos as $r)
-            <li>{{ $r->nombre }}</li>
-        @endforeach
-        </ul>
         
     @endforeach
     </div>

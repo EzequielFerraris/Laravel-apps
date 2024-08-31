@@ -23,5 +23,5 @@
         {{ old('descripcion', $tramite->descripcion ?? '') }} 
     </textarea>
     
-    <button>Save</button>
+    <button>Guardar</button>
 

@@ -90,4 +90,15 @@ class TramiteController extends Controller
         return redirect()->route('tramites.index')
                         ->with('status', 'Tramite eliminado');
     }
+
+    public function search(Request $request)
+    {
+        $search = $request->validate( ['search' => 'required|max:100']);
+        
+        $tramites = Tramite::where('nombre','LIKE',"%{$search['search']}%")
+                        ->paginate(3);
+        
+        return view('tramites.tramite_buscado', compact('tramites'));
+    }
+
 }

@@ -12,7 +12,7 @@ class Requisito extends Model
     use HasFactory;
     use SoftDeletes;
 
-    protected $fillable = ['name'];
+    protected $fillable = ['nombre'];
 
     public function tramites(): BelongsToMany
     {
